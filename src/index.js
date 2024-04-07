@@ -1,13 +1,8 @@
 // Your code here
-// Your code here
 let url = "http://localhost:3000/films"
 //console.log(document.getElementById('films'))
-
-
 document.getElementsByClassName('film item')[0].remove()
 fetchMovies(url)
-
-
 //Create fetch function
 function fetchMovies(url){
     fetch(url)
@@ -60,7 +55,6 @@ function updatetherest(event) {
     document.getElementById("ticket-num").textContent = ("["+(movieCapacity-movieTicketsSold)+"]")
     document.getElementById("poster").src = moviePoster
 }
-
 //to add an event listener to the butto
 document.getElementById("buy-ticket").addEventListener("click", updatebtn)
 function updatebtn(){
